@@ -1,0 +1,38 @@
+
+<!doctype>
+<html>
+<head>
+<title>Example aapje</title>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.tpl_layout1.1.6-bb.js"></script>
+<script type="text/javascript">$(function() {$.setTemplateLayout();});</script>
+
+<style type="text/css">
+@media all
+{
+  body { grid: "a a a"
+               "b c d" }
+  #head { flow: a; background-color: #000; width: 500px; height: 100px;}
+  #nav { flow: b; background-color: #DDD; width: 500px; height: 100px;}
+  #adv { flow: c; background-color: #AAA; width: 500px; height: 100px;}
+  #body { flow: d; background-color: #d2f9b4; width: 500px; height: 100px;}
+}
+@media all and (max-width: 500px)
+{
+  body { grid: "a"
+               "b"
+               "c" }
+  #head { flow: a; background-color: #000; width: 50px; height: 10px;}
+  #nav { flow: b; background-color: #DDD; width: 50px; height: 10px;}
+  #adv { display: none; }
+  #body { flow: c; background-color: #d2f9b4; width: 50px; height: 10px; }
+}
+</style>
+</head>
+<body>
+  <div id="head"></div>
+  <div id="nav"></div>
+  <div id="adv"></div>
+  <div id="body"></div>
+</body>
+</html>
